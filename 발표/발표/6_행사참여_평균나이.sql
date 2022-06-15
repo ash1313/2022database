@@ -1,0 +1,1 @@
+SELECT AVG( (months_between(  SYSDATE, 회원.생년월일  )/12) +1  ) FROM 회원, 행사_참여_신청하다 WHERE 회원.ID = 행사_참여_신청하다.회원ID AND 행사_참여_신청하다.행사번호 = &행사번호;
